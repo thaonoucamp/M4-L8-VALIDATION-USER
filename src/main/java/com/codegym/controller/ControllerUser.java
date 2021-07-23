@@ -14,7 +14,7 @@ public class ControllerUser {
 
     @GetMapping("/user")
     public ModelAndView showForm() {
-        ModelAndView modelAndView = new ModelAndView("/result");
+        ModelAndView modelAndView = new ModelAndView("/index");
         modelAndView.addObject("user", new User());
         return modelAndView;
     }
